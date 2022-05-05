@@ -1,0 +1,36 @@
+  File "tbot.py", line 68
+    fio = sheet.cell(row = i - 1, column = 1).value
+                                                  ^
+TabError: inconsistent use of tabs and spaces in indentation
+  File "tbot.py", line 68
+    fio = sheet.cell(row = i - 1, column = 1).value
+                                                  ^
+TabError: inconsistent use of tabs and spaces in indentation
+  File "tbot.py", line 71
+    return sheet.cell(row = i - 1, column = 1).value
+                                                   ^
+TabError: inconsistent use of tabs and spaces in indentation
+  File "tbot.py", line 71
+    return sheet.cell(row = i - 1, column = 1).value
+                                                   ^
+TabError: inconsistent use of tabs and spaces in indentation
+  File "tbot.py", line 71
+    return sheet.cell(row = i - 1, column = 1).value
+                                                   ^
+TabError: inconsistent use of tabs and spaces in indentation
+  File "tbot.py", line 71
+    return sheet.cell(row = i - 1, column = 1).value
+                                                   ^
+TabError: inconsistent use of tabs and spaces in indentation
+  File "tbot.py", line 68
+    return sheet.cell(row = i - 1, column = 1).value
+                                                   ^
+TabError: inconsistent use of tabs and spaces in indentation
+2022-04-12 00:03:25,955 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+2022-04-16 18:16:16,157 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 502. Description: Bad Gateway"
+2022-04-16 18:16:16,531 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 502. Description: Bad Gateway"
+2022-04-18 03:39:19,435 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 502. Description: Bad Gateway"
+2022-04-18 03:39:19,819 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 502. Description: Bad Gateway"
+2022-04-25 12:41:42,932 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+2022-05-05 04:08:19,469 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 502. Description: Bad Gateway"
+2022-05-05 04:08:19,839 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 502. Description: Bad Gateway"
