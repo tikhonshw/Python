@@ -1,3 +1,4 @@
+# coding: utf-8
 import os
 import urllib.request
 
@@ -5,11 +6,20 @@ massIp = {'Салехард - Мужи': ['10.1.2.1', '10.1.2.2', '10.1.2.20', '
           'Салехард - Тазовский': ['192.168.116.1', '192.168.116.60']
           }
 
-massIpDlink = ['10.125.25.1', '10.125.25.2', '10.125.25.3',
-               '10.125.25.4', '10.125.25.5', '10.125.25.6',
-               '10.125.25.7', '10.125.25.8', '10.125.25.9',
-               '10.125.25.10', '10.125.25.11', '10.125.25.12',
-               '10.125.25.14']
+massIpDlink = {'ЛАЗ СВЯЗИ\t': '10.125.25.1',
+               'ОРЛ-Т\t\t': '10.125.25.2',
+               'ПМРЦ\t\t': '10.125.25.3',
+               'БПРМ-37\t\t': '10.125.25.4',
+               'КРМ-217\t\t': '10.125.25.5',
+               'ГРМ-37\t\t': '10.125.25.6',
+               'АРП-75\t\t': '10.125.25.7',
+               'ГРМ-217\t\t': '10.125.25.8',
+               'ЛККС\t\t': '10.125.25.9',
+               'ОРЛ-А\t\t': '10.125.25.10',
+               'Вышка-КДП\t': '10.125.25.11',
+               'ПРЦ\t\t': '10.125.25.12',
+               'РМА-РМД\t\t': '10.125.25.14'
+            }
 
 def getPing(ipAdr):
     res = os.popen('ping -c 1 -w 10 ' + ipAdr + ' | grep time= | awk \'{ print $7}\' ').read()
@@ -28,14 +38,14 @@ def getLineStatus(ipDlink):
     if res > 0:
         r = urllib.request.urlopen('http://'+ ipDlink +'/DataStore/Panel.js').readlines()
         line = r[21][18:46]
-        return ipDlink + ' ' + str(res) + ' ' + line.decode('utf-8')
+        return ipDlink + ' ' + str(res) + 'ms ' + line.decode('utf-8')
     else:
         return ipDlink + ' Host not found!!!'
 
-for ipAdr in range(len(massIpDlink)):
-    print( str(getLineStatus(massIpDlink[ipAdr])) )
+for name, ip in massIpDlink.items(): #range(len(massIpDlink)):
+    print( name, str(getLineStatus(ip) ) ) #massIpDlink[ip])
 
-for way, ipAdr  in massIp.items():
+for way, ipAdr in massIp.items():
     print(way)
     for ip in ipAdr:
         print(ip + ' ' + str( getPing(ip) ) + ' ms')
