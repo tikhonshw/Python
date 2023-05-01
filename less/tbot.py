@@ -683,7 +683,7 @@ def send_echo(message):
             for row in records:
                 idSred = str(row[1])
                 vidTO = str(row[2])
-                # print (idSred + ' vidTO ' + vidTO)
+                # print  (idSred + ' vidTO ' + vidTO)
                 sql_select_Query_Norma = 'SELECT norma, osnovanieTO FROM arm_vdo.grafTO_norma WHERE idSred = "'+ idSred +'" and vidTO = "'+ vidTO +'" and yearTO = "' + yearNow + '" '
                 cursorNorma = connection.cursor()
                 cursorNorma.execute(sql_select_Query_Norma)
