@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>тема 12. Основы JS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row bg-succes">
+        <div class="col-md-12 col-lg-6">
+          <h3 class="my-3 shadow-lg p-3">Задание 1</h3>
+          <p>Напишите программу на JavaScript,
+          что будет высчитывать сумму
+          чисел кратных 3 или 5.
+          Числа должны быть до 1000.</p>
+          <div class="row fw-bold">
+            <div class="col-md-5 col-lg-9">
+              Сумма чисел кратных 3 и 5:
+            </div>
+            <div class="col-md-7 col-lg-2" id="summ"></div>
+
+            <div class="col-md-5 col-lg-9">
+              Сумма чисел кратных 3:
+            </div>
+            <div class="col-md-7 col-lg-2" id="summ3"></div>
+
+            <div class="col-md-5 col-lg-9">
+              Сумма чисел кратных 5:
+            </div>
+            <div class="col-md-7 col-lg-2" id="summ5"></div>
+
+            <div class="col-md-5 col-lg-9">
+              Сумма всех чисел до 1000:
+            </div>
+            <div class="col-md-7 col-lg-2" id="summAll"></div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6">
+          <h3 class="my-3 shadow-lg p-3">Задание 2</h3>
+          <p>Создайте двумерный массив, в котором найдите
+           минимальный элемент среди всех элементов в массиве.
+           Важно учесть, что нахождение минимального элемента
+           должно производиться при помощи циклов.<br>
+           Массив:<br>
+
+           <code>var x = new Array(new Array(20, 34, 2),
+                             new Array(9, 12, 18),
+                             new Array(3, 4, 5));</code></p>
+           <div class="row fw-bold">
+             <div class="col-md-8 col-lg-10">
+               Минимальное значение в представленном массиве:
+             </div>
+             <div class="col-md-4 col-lg-2" id="minElement"></div>
+
+             <div class="col-md-8 col-lg-10">
+               Максимальное значение в представленном массиве:
+             </div>
+             <div class="col-md-4 col-lg-2" id="maxElement"></div>
+
+             <div class="col-md-8 col-lg-10">
+               Кол-во проходов (кол-во элементов):
+             </div>
+             <div class="col-md-4 col-lg-2" id="countElement"></div>
+
+              <div class="col-md-8 col-lg-10">
+                Сумма чисел в массиве:
+              </div>
+              <div class="col-md-4 col-lg-2" id="summElement"></div>
+
+           </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script async src="js/index.js"></script>
+  </body>
+</html>

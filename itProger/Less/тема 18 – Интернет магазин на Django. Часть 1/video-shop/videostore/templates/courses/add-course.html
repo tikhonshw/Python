@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+<div class="add-courses container">
+    <div class="add-course">
+        <h1>{{ title }}</h1>
+          <form method="post" enctype="multipart/form-data" class="form-register auth">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-info" type="submit">{{ btn_text }}</button>
+          </form>
+    </div>
+</div>
+{% endblock %}

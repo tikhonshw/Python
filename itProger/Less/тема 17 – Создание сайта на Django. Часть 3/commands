@@ -1,0 +1,19 @@
+-- создание проекта
+django-admin startproject itProger
+
+python3 manage.py runserver
+
+-- создание приложения
+python3 manage.py startapp blog
+
+--регистрация админа в базе данных
+python3 manage.py createsuperuser
+
+--обновление БД
+python3 manage.py migrate
+
+--после добавления класса по созданию таблицы в БД
+python3 manage.py makemigrations
+
+--просмотр sql создаваемой таблицы
+python3 manage.py sqlmigrate blog 0001

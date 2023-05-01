@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2? ');
+* {
+  /* font-size: 40px; */
+  font-family: 'Roboto Slab', serif;
+}
+input {
+  width: 100%;
+}
+#showJob, #info {
+  display: none;
+}
+.listJob {
+  cursor: pointer;
+}
+.jobClose {
+  font-style: italic;
+  color: #8d6969;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.opisanie {
+  margin: 50px 0;
+  font-family: 'Caveat', cursive;
+  font-size: 14pt;
+}

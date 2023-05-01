@@ -89,7 +89,7 @@ doc.render(context)
 nameReport = pathDocx + str(nextFr) + '_report' + '.docx'
 doc.save(nameReport)
 
-os.system('echo "Еженедельный отчет\n'+ strOut +'" | mutt -s "Еженедельный отчет главному энергетику филиала" -e "my_hdr From: GoodJob <tixon@yamal.ans.aero>" -a ' + nameReport + '  --  kdp@yamal.ans.aero, laz_kdp@yamal.ans.aero, tixon@yamal.ans.aero') #
+os.system('echo "Еженедельный отчет\n'+ strOut +'" | mutt -s "Еженедельный отчет главному энергетику филиала" -e "my_hdr From: GoodJob <tixon@yamal.ans.aero>" -a ' + nameReport + '  --  kdp@yamal.ans.aero, energetik@yamal.ans.aero, tixon@yamal.ans.aero') #
 print(str(strOut))
 os.remove(nameReport)
 

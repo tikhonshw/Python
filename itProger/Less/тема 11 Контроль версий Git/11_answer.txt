@@ -1,0 +1,28 @@
+1. инициализация в проекте git init
+2. создаем файл .gitignore для указания исключений
+2.1. в созданном файле прописать правила согласно задания:
+*.sass
+/bin
+/admin
+/config
+3. отмечаем все файлы в локальное хранилище: git add .
+4. добавляем описание, добавляем в локальное хранилище: git commit -m 'Комментарий для файлов'
+5. создаем новую ветку: git branch blog
+6. переходим на новую ветку: git checkout blog
+7. по заданию создаем файлы: index.js, index.html;
+
+8. выгрузка на github:
+8.1 создал новы репозиторий (произвел настройки досупа) ## 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
+8.2 отмечаем все файлы в локальное хранилище: git add .
+8.3 подготовили для загрузки , добавили коментарий git commit -m "first commit"
+8.4 указываем удаленный репозиторий git remote add origin https://github.com/tikhonshw/testUpLoadBlog.git
+8.5. производим выгрузку git push -u origin master
+8.6 так как ветвь blog не была объединина с основной веткой master на github она не выгрузилась
+
+пришли домой сделали
+обновить локальный из интернета git pull
+
+поработали сделали
+git add .
+git commit -m "first commit"
+производим выгрузку git push -u origin master

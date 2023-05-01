@@ -1,0 +1,29 @@
+Полезные ссылки:
+
+Технология Homebrew;
+Установщик PyAudio.
+
+Устранение ошибок
+Если при установке PyAudio у вас возникают ошибки, то выполните удаление вашей версии Питон и установите Python 3.5. Также можно попробовать установить pipwin. Инструкция ниже:
+
+
+pip install pipwin
+pipwin install pyaudio
+
+Также вы можете скачать PyAudio здесь. Необходимо выбрать версию PyAudio, которая соответствует версии Python, например, если у вас установлен python3.7.x (x64 версия), то выбираете пакет PyAudio‑0.2.11‑cp37‑cp37m‑win_amd64.whl, где cp37 указывает на версию python3.7.x, а amd64 на соответствующую разрядность. После загрузки установите пакет при помощи pip.
+
+
+cd <папка с пакетом pyaudio.whl>
+pip install PyAudio‑0.2.11‑cp37‑cp37m‑win_amd64.whl
+
+Важно установить библиотеку Tesseract OCR при работе на Windows:
+
+# установка в терминале
+pip install pytesseract
+
+#импорт
+import pytesseract
+
+# Если у вас нет исполняемого файла tesseract в вашем PATH, допишите следующее:
+pytesseract.pytesseract.tesseract_cmd = r''
+# Пример tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\\tesseract'

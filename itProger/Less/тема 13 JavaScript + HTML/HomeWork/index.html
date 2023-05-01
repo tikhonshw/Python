@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>тема 13</title>
+</head>
+<body onload="resize();">
+  <!-- 1) Создайте переменную со значением 8.
+  Создайте программу, что будет просить пользователя ввести число из всплывающего окна
+  и сверять это число с числом в переменной.
+  До тех пор, пока пользователь не введет число 8 – просите пользователя это сделать
+  и выдавайте ему всплывающее окно. -->
+  <button type="button" name="button" onclick="theme1();">Задание 1</button>
+
+
+  <!-- 2) Напишите программу на JavaScript, которая будет получать ширину и высоту окна.
+  Каждый раз, когда размер окна будет менятся в консоль или на страницу сайта должна
+  выводиться новая информация про размеры окна. -->
+  <div class="size" id="size"></div>
+
+  <!-- 3) Напишите программу на JavaScript, которая найдет все жирные слова в абзаце,
+  что представлен ниже. Жирные слова должны становиться красного цвета при наведении на сам абзац. -->
+  <p>Задание 3</p>
+  <p id="p" onmouseover="boldTestInRed('b');" onmouseout="boldTestInBlack('b');">
+    Простой <b>пример</b> небольшого текста, в <b>котором</b> есть выделенные <b>жирным</b> слова.<br>
+    При наведении жирные слова должны стать красного цвета, а когда курсор забирается, то их цвет возвращается обратно.
+  </p>
+
+  <!-- 4) Ниже пример HTML-файла с кнопкой отправки.
+  Напишите функцию JavaScript, что получит значения атрибутов
+  href, hreflang, rel, target и type
+  указанной ссылки. -->
+  <p>Задание 4</p>
+
+  <p>
+    <a id="link" type="text/html" hreflang="ru-ru" rel="nofollow" target="_self" href="https://itproger.com/">itProger</a>
+  </p>
+  <button onclick="getAttributes()">Получить все атрибуты</button>
+
+
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
