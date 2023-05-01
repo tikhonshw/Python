@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Задание #7</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>
+        <th>Мини веб сайт</th>
+      </tr>
+      <tr>
+        <td>
+          <img src="https://i.imgur.com/Od0ped2.jpg"
+               alt="Просто картинка из Интернета"
+               width="480px">
+        </td>
+        <td>
+          <span>
+              Информация про <mark>изображение</mark>
+              <details>
+                 <summary>Подробнее</summary>
+                 <p>Какой-то текст про изображение</p>
+              </details>
+              <audio src="" controls></audio>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/m5okjMvj9b4"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+          </iframe>
+        </td>
+        <td>
+          <h3>Наши преимущества</h3>
+          <ul>
+            <li>Крутые <a href="#"><u><i>цены</i></u></a>;</li>
+            <li>Большой выбор;</li>
+            <li>Хорошие специалисты;</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+    <h3>Зарегистрироваться на событие:</h3>
+      <form action="" method="post" accept-charset="utf-8">
+      	<label for="name">Имя</label>
+      	<input id="name" type="text" name="name" placeholder="Введите имя"><br>
+
+      	<label for="email">Email</label>
+      	<input id="email" type="email" name="email" placeholder="Введите email"><br>
+      	<label for="pass">Пароль</label>
+      	<input id="pass" type="password" name="pass" placeholder="Пароль"><br>
+        Фото профиля <input type="file" name="" value="">
+        <br>
+        <input list="continents" name="continent_2" type="text" placeholder="Опыт в програмирование">
+              <datalist id="continents">
+                <option value="">1 год</option>
+                <option value="">2 года</option>
+                <option value="">3-4 года</option>
+                <option value="">более 5 лет</option>
+              </datalist>
+        <br>
+        <select>
+          <option value="" disabled selected>Любимый язык</option>
+          <option value="">PHP</option>
+          <option value="">JavaScript</option>
+          <option value="">C#</option>
+        </select>
+        <br>
+      	<input type="checkbox" id="rights" name="rights" checked="checked">
+      	<a href="#">Пользовательское соглашение</a><br>
+      	<button type="submit">Отправить</button>
+      	<button type="reset">Очистить</button>
+      </form>
+    </body>
+</html>
